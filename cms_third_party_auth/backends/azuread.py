@@ -1,4 +1,7 @@
-from social.backends.azuread import AzureADOAuth2 as BaseAzureADOAuth2
+try:
+    from social.backends.azuread import AzureADOAuth2 as BaseAzureADOAuth2
+except ImportError:
+    from social_core.backends.azuread import AzureADOAuth2 as BaseAzureADOAuth2
 
 
 class AzureADOAuth2(BaseAzureADOAuth2):
