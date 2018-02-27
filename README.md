@@ -11,7 +11,6 @@ In the edx/app/edxapp/cms.env.json file, edit the file so that it includes the f
 ```sh
 "FEATURES" : {
     ...
-    "ENABLE_COMBINED_LOGIN_REGISTRATION": true,
     "ENABLE_THIRD_PARTY_AUTH": true
 }
 ```
